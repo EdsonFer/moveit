@@ -3,7 +3,7 @@ import styles from '../styles/components/Countdown.module.css';
 
 let countdownTimeout: NodeJS.Timeout;
 
-export const Countdown = () => {
+export function Countdown() {
 	const [time, setTime] = useState(25 * 60);
 	const [isActive, setIsActive] = useState(false);
 	const [loading, setLoading] = useState(0);
@@ -105,4 +105,4 @@ export const Countdown = () => {
 			)}
 		</div>
 	);
-};
+}
