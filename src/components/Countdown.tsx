@@ -1,10 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { ChallengesContext } from '../contexts/ChallengesContext';
 import styles from '../styles/components/Countdown.module.css';
 
 let countdownTimeout: NodeJS.Timeout;
 
 export function Countdown() {
-	const [time, setTime] = useState(25 * 60);
+	const { startNewChallenge } = useContext(ChallengesContext);
+
+	const [time, setTime] = useState(0.1 * 60);
 	const [isActive, setIsActive] = useState(false);
 	const [loading, setLoading] = useState(0);
 
@@ -33,7 +36,6 @@ export function Countdown() {
 	// aumenta a barra de loading até 100% sempre que o tempo diminuir
 	useEffect(() => {
 		setLoading(loading + 0.066);
-		console.log(loading);
 	}, [time]);
 
 	useEffect(() => {
@@ -46,6 +48,7 @@ export function Countdown() {
 			setHasFinished(true);
 			setIsActive(false);
 			setLoading(0);
+			startNewChallenge();
 		}
 	}, [isActive, time]);
 
