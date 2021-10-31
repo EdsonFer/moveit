@@ -1,11 +1,9 @@
 import '../styles/global.css';
 import Head from 'next/head';
 
-import { ChallengesProvider } from '../contexts/ChallengesContext';
-
 function MyApp({ Component, pageProps }) {
 	return (
-		<ChallengesProvider>
+		<>
 			<Head>
 				<link rel="shortcut icon" href="favicon.png" type="image/png" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -15,7 +13,7 @@ function MyApp({ Component, pageProps }) {
 				/>
 			</Head>
 			<Component {...pageProps} />
-		</ChallengesProvider>
+		</>
 	);
 }
 
