@@ -1,15 +1,19 @@
+import { createGlobalStyle } from 'styled-components';
+
+export default createGlobalStyle`
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 :root {
-	--white: #fff;
-	--background: #f2f3f5;
+	--white: ${props => props.theme.colors.challengeBox};
+	--background: ${props => props.theme.colors.background};
 	--gray-line: #dcdde0;
-	--text: #666666;
+	--text: ${props => props.theme.colors.text};
 	--text-highlight: #b3b9ff;
-	--title: #2e384d;
+	--title: ${props => props.theme.colors.text};
 	--red: #e83f5b;
 	--green: #4cd62b;
 	--blue: #5965e0;
@@ -49,3 +53,4 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+`;
