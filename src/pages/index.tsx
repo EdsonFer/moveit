@@ -1,20 +1,19 @@
 import Head from 'next/head';
 import { GetServerSideProps } from 'next';
+
 import { ChallengeBox } from '../components/ChallengeBox';
 import { CompletedChallenges } from '../components/CompletedChallenges';
 import { Countdown } from '../components/Countdown';
 import { ExperienceBar } from '../components/ExperienceBar';
 import { Profile } from '../components/Profile';
 import { CountdownProvider } from '../contexts/CountdownContext';
-import { ThemeProvider } from 'styled-components';
+import { ChallengesProvider } from '../contexts/ChallengesContext';
+import { usePersistedState } from '../utils/usePersistedState';
+import { ThemeProvider, DefaultTheme } from 'styled-components';
 import GlobalStyle from '../styles/global';
-
 import dark from '../styles/themes/dark';
 import light from '../styles/themes/light';
-import { useState } from 'react';
-
 import styles from '../styles/pages/Home.module.css';
-import { ChallengesProvider } from '../contexts/ChallengesContext';
 
 interface HomeProps {
 	level: number;
@@ -23,7 +22,7 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
-	const [theme, setTheme] = useState(dark);
+	const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', dark);
 
 	const toggleTheme = () => {
 		setTheme(theme.title === 'light' ? dark : light);

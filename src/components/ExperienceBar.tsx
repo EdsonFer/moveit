@@ -13,7 +13,7 @@ export function ExperienceBar({ toggleTheme }: Props) {
 	const { currentExperience, experienceToNextLevel } =
 		useContext(ChallengesContext);
 
-	const { title, colors } = useContext(ThemeContext);
+	const { title } = useContext(ThemeContext);
 
 	const percentToNextLevel =
 		Math.round(currentExperience * 100) / experienceToNextLevel;
