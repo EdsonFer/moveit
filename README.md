@@ -2,7 +2,7 @@
 <img src="https://i.ibb.co/DGpVfZh/moveit.png" alt="moveit" border="0">
 
 
-Website com tecnica de pomodoro, focado em atividades para pessoas que ficam muito tempo sentadas e precisam se exercitar um pouco. após o ciclo de 25 minutos voçê recebe atividades para efetuar e ganha xp ao conclui-las
+Website com tecnica de pomodoro, focado em atividades para pessoas que ficam muito tempo sentadas e precisam se exercitar um pouco. após o ciclo de 25 minutos voCê recebe atividades para efetuar e ganha xp e consegue avançar de nivel ao conclui-las
 </p>
 
 ## 🔥 Prévia 
