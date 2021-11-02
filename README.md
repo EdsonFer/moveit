@@ -9,16 +9,26 @@ Website com tecnica de pomodoro, focado em atividades para pessoas que ficam mui
 
 <img src="https://i.ibb.co/kJ6yb6T/moveitsite.png" alt="moveitsite" border="0">
 
-## Acessar Website
+## 👨🏻‍💻 Projeto
 
 <a href="https://edmoveit.vercel.app/" target="_blank" alt="move it">Move It</a>
 
-## 🛠️ Construído com
+## 🚀 Como executar
 
-As seguintes ferramentas foram usadas na construção do projeto:
+- Clone o repositório
+- Instale as dependências com `yarn`
+- Inicie o servidor com `yarn dev`
 
-NextJS <br>
-TypeScript
+Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
+
+## ✨ Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [React](https://reactjs.org)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+
 
 ## ✒️ Autor
 
