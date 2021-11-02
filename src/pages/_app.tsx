@@ -1,4 +1,3 @@
-import '../styles/global.ts';
 import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
@@ -12,7 +11,7 @@ function MyApp({ Component, pageProps }) {
 					rel="stylesheet"
 				/>
 			</Head>
-			<Component {...pageProps} />\
+			<Component {...pageProps} />
 		</>
 	);
 }

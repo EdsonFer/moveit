@@ -42,8 +42,8 @@ export function ExperienceBar({ toggleTheme }: Props) {
 				height={10}
 				width={40}
 				handleDiameter={20}
-				onColor="#f2f3f5"
 				offColor="#343a40"
+				onColor="#f2f3f5"
 			/>
 		</>
 	);
