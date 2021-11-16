@@ -7,7 +7,7 @@ Website com tecnica de pomodoro, focado em atividades para pessoas que ficam mui
 
 ## 🔥 Prévia 
 
-<img src="https://i.ibb.co/kJ6yb6T/moveitsite.png" alt="moveitsite" border="0">
+<img src="https://uploaddeimagens.com.br/images/003/538/702/original/Capture.PNG?1637089905" alt="moveitsite" width="100%" border="0">
 
 ## 👨🏻‍💻 Projeto
 
